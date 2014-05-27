@@ -1,0 +1,29 @@
+<div class="sub-menu">
+	<div class="content-sub">
+		<h1>Blog videos</h1>
+		<p>Learn with my video you will did it....</p>
+	</div>
+</div>
+<div class="mini-menu">
+	<div class="content">
+		<ul>
+			<li><%= link_to "Tutorails",site_blog_path,style: "color:#888" %></li>
+		</ul>
+	</div>
+</div>
+<div class="content-box">
+<div class="title">
+	<span>Last Tutorails</span>
+</div>
+<div class="last-tutorails">
+	<% @prolast.each do |pro| %>
+		<div class="large-3 columns" style="padding-left: 0px;"><%= image_tag (pro.image),size: "300" %></div>
+		<div class="large-9 columns" style="padding-left:0px;">
+			<div class="pro-name"><%= pro.name %></div>	
+			<div class="pro-desc"><%= pro.description %></div>
+			<%= link_to "View last tutorails", site_show_path(product_id: pro),class: "button tiny vine radius",style: "font-size:1em;margin-top:13px;" %>	
+		</div>
+	<% end %>
+</div>
+	<%= render "site/box" %>
+</div>

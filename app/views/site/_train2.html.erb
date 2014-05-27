@@ -1,0 +1,16 @@
+<div class="content"  style="margin-top:30px; padding:0px;">
+<% @trains.each do |train| %>
+<%= link_to site_showtrain_path(train_id: train) do %>
+	<div class="train2">
+		<div class="train-img"><%= image_tag train.image,size: "130" %></div>
+		<div class="train-right">
+			<div class="train-name"><%= train.name %></div>
+			<div class="train-desc"><%= truncate(train.description,length: 110) %></div>
+			<!-- <div class="footer-box">
+				<p><i class="fa fa-clock-o"></i></p>
+			</div>
+ -->		</div>
+	</div>
+	<% end %>
+<% end %>
+</div>

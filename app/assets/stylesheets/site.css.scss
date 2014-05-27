@@ -1,0 +1,241 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "small-media";
+@import "medium-media";
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Crafty+Girls);
+@import url(http://fonts.googleapis.com/css?family=Philosopher);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+.top-bar{
+	padding:0px 10% ;
+	ul{
+		li{
+			a{
+				font-family: 'Philosopher', sans-serif;
+			}
+		}
+	}
+}
+
+.sub-menu{
+	background: url(bg.png) repeat-x center center #991a1e;
+	display: flex;
+	height: 180px;
+	padding:0px 10%;
+	align-items:center;
+	align-content:center;
+	.content-sub{
+		padding-left:15px;
+		h1{
+			font-family: 'Philosopher', sans-serif;
+			margin-top: 0px;
+			margin-bottom: 0;
+			color:#fff;
+			font-size:2.6em;
+		}
+		p{
+			margin-top:0px;
+			font-size:18px;
+			color:#fff;
+			font-family: 'Philosopher', sans-serif;
+		}
+	}
+}
+.content{
+	margin-top: 50px;
+	padding-left: 9%;
+	padding-right:9%;
+		.large-12{
+			.large-4{
+				.title{
+					display: block;
+					height: 25px;
+					line-height: 25px;
+					margin:0px 0px 12px;
+					font-size:1.4em;
+					font-family: 'Roboto Condensed', sans-serif;
+					background: url(dash.png) repeat-x scroll right center transparent;
+					span{
+						padding-right: 18px;
+						background-color: #fff;
+						border:none;
+						display: block;
+						float: left;
+						height: 25px;
+					}
+				}
+				p{
+					margin-top: 20px;	
+					span{
+
+						img{
+							float: left;
+							height: 100%;
+							padding-right:5px;
+						}
+					}
+					font-size:0.9em;
+				}
+			}
+		}
+		.large-12{
+			.title1{
+				background: url(dash.png) repeat-x scroll right center transparent;
+				span{
+					padding-right: 18px;
+					background: #FFF;
+					font-size:1.4em;
+					font-family: 'Roboto Condensed', sans-serif;		
+				}
+			}
+		}
+}
+textarea{
+	height: 100px;
+}
+.box{
+	width: 240px;
+	height: 330px;
+	border:1px solid #f1f1f1;
+	display: inline-block;
+	margin-right:2%;
+	margin-left:0px;
+	margin-bottom: 2%;
+	box-shadow: 0px 0px 2px #f1f1f1;
+	.pro-name{
+		text-transform: capitalize;
+		text-align:center;
+		 margin-bottom: 15px;
+		margin-top:12px;
+		height: 15px;
+		color:#2EADA3;
+	}
+	.pro-img{
+		width: 100%;
+		height: 140px;
+		padding:2px;
+		img{
+			height: 140px;
+			width: 100%;
+		}	
+	}
+	.pro-des{
+		height: 120px;
+		margin-top:8px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size:0.9em;
+		line-height: 1.5;
+		color:#666;
+	}
+	.footer-box{
+		margin-top: 0px;
+		border-top:1px dashed #f1f1f1;
+		padding-left: 10px;
+		padding-right: 10px;
+		background: #FFF;
+		padding-top: 3px;
+		p{
+			font-size:0.8em;
+			color:#2EADA3;
+			bottom: 0;
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		box-shadow: 2px 2px 4px #f1f1f1;
+	}
+}
+.mini-menu{
+	background: #fbfbfb;
+	height: 40px;
+	.content{
+		margin-top:0px;
+		padding-right: 9%;
+		padding-left: 9%;
+		padding-top:7px;
+		ul{
+			li{
+				display: inline;
+				list-style-type: none;
+				a{
+					font-size:0.9em;
+					float: left;
+					height: 30px;
+					display: block;
+					padding:0px 15px;
+					color:#991a1e;
+					padding-right: 20px;
+					font-family: 'Roboto Condensed', sans-serif;
+					opacity: 1;
+					background:url(1.png) no-repeat scroll right center transparent;
+				}
+			}
+		}
+	}
+}
+.content-box{
+	padding-left:11%;
+	padding-right:11%;
+	.title{
+		margin-top:30px;
+		background: url(dash.png) repeat-x scroll right center transparent;
+		span{
+			background: #FFF;
+			padding-right:20px;
+			font-size:1.4em;
+		}
+	}
+}
+.last-tutorails{
+	margin-top: 20px;
+	display: flex;
+	.large-3{
+		width: 30%;
+		display: inline-block;
+		img{
+			margin-right:30px;
+		}
+	}
+	.large-9{
+		width: 70%;
+		.pro-name{
+			text-transform: capitalize;
+			padding-bottom:10px;
+			color:#991e1a;
+			font-size: 1.4em;
+		}
+		.pro-desc{
+			line-height: 1.4;
+		}
+	}
+}
+.login-form{
+	margin-top:50px;
+	h2{
+		font-size:1.5em;
+		background: url(dash.png) repeat-x scroll right center transparent ;
+		span{
+			background: #FFF;
+			padding-right:17px;
+			
+		}
+	}
+}
+.remember-form{
+	display: flex;
+	.rem-right{
+		float: right;
+		justify-content:flex-end;
+		a{
+			font-size:0.8em;
+			float: right;
+			justify-content:flex-end;
+		}
+	}	
+}
+.border{
+	margin-right:5px;
+}
+

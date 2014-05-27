@@ -1,0 +1,23 @@
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><%= link_to "Anakot",root_path %></h1>
+      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+    </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+	 <ul class="right">
+      <li><%= link_to "Login", new_user_session_path %></li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><%= link_to "Blog", site_blog_path %></li>
+      <li><%= link_to "Training", site_train_path %></li>
+      <li><%= link_to "Forum" %></li>
+      <li><%= link_to "Contact", site_contact_path %></li>
+    </ul>
+  </section>
+</nav>

@@ -1,0 +1,19 @@
+<div class="login-form">
+	<div class="large-4 large-centered columns">
+	<h2><span>Login</span></h2>
+	<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+	  <div><%= f.label :email %>
+	  <%= f.email_field :email, autofocus: true %></div>
+
+	  <div style="display:flex;"><%= f.label :password %>&nbsp;<%= link_to "Forgot your password?", new_password_path(resource_name),style: "color:#2EADA3;float:right;font-size:0.7em;margin-top:5px;text-transform:underline;" %></div>
+	    <%= f.password_field :password, autocomplete: "off" %>
+
+	  <% if devise_mapping.rememberable? -%>
+	  	<div class="remember-form">
+		    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+	    </div>
+	  <% end -%>
+	  <div><%= link_to '<i class="fa fa-facebook fa-1x border" style="font-size:1.3em;"></i> Login with Facebook'.html_safe,root_path, class: "button facebook tiny radius",style: "font-size:0.8em;" %><%= f.submit "Sign in", class: "button vine tiny radius",style: "font-size:0.8em;float:right;" %></div>
+	<% end %>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @train.name %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @train.image %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @train.video %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @train.description %>
+</p>
+
+<%= link_to 'Edit', edit_train_path(@train) %> |
+<%= link_to 'Back', trains_path %>

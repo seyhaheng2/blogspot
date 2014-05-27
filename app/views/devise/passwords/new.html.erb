@@ -1,0 +1,14 @@
+<div class="content">
+<div class="large-4 large-centered columns" style="padding: 0px;">
+<h3><u>Forgot your password?</u></h3>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :email %>
+  <%= f.email_field :email, autofocus: true %></div>
+
+  <div><%= f.submit "Send me reset password",class: "button tiny vine radius",style: "" %></div>
+<% end %>
+</div>
+</div>

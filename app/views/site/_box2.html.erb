@@ -1,0 +1,14 @@
+<div class="content"  style="margin-top:30px; padding:0px;">
+<% @products.each do |p| %>
+<%= link_to site_show_path(product_id: p) do %>
+	<div class="box2">
+		<div class="pro-img"><%= image_tag p.image,size: "200" %></div>
+		<div class="pro-name"><%= p.name %></div>
+		<div class="pro-des"><%= truncate(p.description,length: 110) %></div>
+		<div class="footer-box">
+			<p><i class="fa fa-clock-o"></i></p>
+		</div>
+	</div>
+<% end %>
+<% end %>
+</div>

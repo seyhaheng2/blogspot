@@ -1,0 +1,46 @@
+<div class="sub-menu">
+	<div class="content-sub">
+		<h1>All Training Course</h1>
+		<p>Learn with my video you will did it....</p>
+	</div>
+</div>
+<div class="mini-menu">
+	<div class="content">
+		<ul>
+			<li><%= link_to "Training  Course",site_train_path,style: "color:#888" %></li>
+		</ul>
+	</div>
+</div>
+<div class="content-box">
+<div class="title">
+	<span>Latest Training</span>
+</div>
+<div class="last-tutorails">
+	<% @tran.each do |tran| %>
+		<div class="large-3 columns" style="padding-left: 0px;"><%= image_tag (tran.image),size: "300" %></div>
+		<div class="large-9 columns" style="padding-left:0px;">
+			<div class="pro-name"><%= tran.name %></div>	
+			<div class="pro-desc"><%= tran.description %></div>
+			<%= link_to "View last tutorails", site_showtrain_path(train_id: tran),class: "button tiny vine radius",style: "font-size:1em;margin-top:13px;" %>
+		</div>	
+	<% end %>
+</div>
+<div class="content"  style="margin-top:30px; padding:0px;">
+<hr style="background:#f1f1f1;margin-bottom:23px;">
+<% @trains.each do |t| %>
+<%= link_to site_showtrain_path(train_id: t) do %>
+	<div class="box">
+		<div class="pro-img"><%= image_tag t.image,size: "200" %></div>
+		<div class="pro-name"><%= t.name %></div>
+		<div class="pro-des"><%= truncate(t.description,length: 130) %></div>
+		<div class="footer-box">
+			<p><i class="fa fa-clock-o"></i></p>
+		</div>
+	</div>
+<% end %>
+<% end %>
+</div>
+
+</div>
+	
+
